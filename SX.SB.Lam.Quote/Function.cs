@@ -12,7 +12,7 @@ namespace SX.SB.Lam.Quote
       
         public string  Post(string request, ILambdaContext context)
         {
-            var _status = false;
+           
             var _message = string.Empty;
  
             return  request;
