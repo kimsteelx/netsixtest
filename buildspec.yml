@@ -2,11 +2,10 @@
 
 phases:
     build:
-        commands: 
-            - /usr/local/bin/dotnet-install.sh --channel LTS
+        commands:
             - cd SX.SB.Lam.Quote
             - dotnet new -i Amazon.Lambda.Templates::*
             - dotnet tool install -g Amazon.Lambda.Tools
             - dotnet tool update -g Amazon.Lambda.Tools
-            - dotnet lambda deploy-function 
+            - dotnet lambda deploy-function "netsixpoitzero" --function-role "arn:aws:iam::362122011912:role/accounts"
     
