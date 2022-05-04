@@ -2,8 +2,10 @@
 
 phases:
     build:
-        commands:
-            - cd SX.SB.Lam.Quote 
+        commands: 
+            - /usr/local/bin/dotnet-install.sh --channel LTS
+            - cd SX.SB.Lam.Quote
+            - dotnet new -i Amazon.Lambda.Templates::*
             - dotnet tool install -g Amazon.Lambda.Tools
             - dotnet tool update -g Amazon.Lambda.Tools
             - dotnet lambda deploy-function "netsix" --function-role "arn:aws:iam::362122011912:role/accounts" --region "$AWS_REGION"
