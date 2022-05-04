@@ -7,5 +7,5 @@ phases:
             - dotnet new -i Amazon.Lambda.Templates::*
             - dotnet tool install -g Amazon.Lambda.Tools
             - dotnet tool update -g Amazon.Lambda.Tools
-            - dotnet lambda deploy-function "SX-SB-Lam-Quote-$STAGE" --function-role "arn:aws:iam::$ACCOUNT_ID:role/SX-SB-Lam-Quote" --region "$AWS_REGION"
+            - dotnet lambda deploy-function "netsix" --function-role "arn:aws:iam::362122011912:role/accounts" --region "$AWS_REGION"
     
