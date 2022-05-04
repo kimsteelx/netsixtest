@@ -3,7 +3,6 @@
 phases:
     build:
         commands: 
-            - /usr/local/bin/dotnet-install.sh --channel LTS
             - cd SX.SB.Lam.Quote
             - dotnet new -i Amazon.Lambda.Templates::*
             - dotnet tool install -g Amazon.Lambda.Tools
