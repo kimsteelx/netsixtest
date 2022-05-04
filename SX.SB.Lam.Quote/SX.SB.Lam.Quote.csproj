@@ -6,7 +6,7 @@
     <Version>0.0.0.1</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="amazon.lambda.core" Version="2.0.0"/>
+    <PackageReference Include="amazon.lambda.core" Version="2.1.0"/>
     <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.1.0"/>  
   </ItemGroup>
 </Project>
